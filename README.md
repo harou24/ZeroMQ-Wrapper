@@ -1,5 +1,4 @@
-# ZeroMQ-Request-Reply-Golang
-How to use ZeroMQ Request-Reply Pattern in Golang.
+# ZeroMQ-Wrapper
 
 # Tests
 [![Docker Compose Actions Workflow](https://github.com/harou24/Fiber-ZeroMQ-Server-Worker/actions/workflows/main.yml/badge.svg)](https://github.com/harou24/Fiber-ZeroMQ-Server-Worker/actions/workflows/main.yml)
