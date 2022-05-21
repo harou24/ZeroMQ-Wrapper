@@ -1,0 +1,28 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  server:
+    container_name: server
+    build: server/.
+    ports:
+      - "5555:5555"
+      - "3000:3000"
+    networks:
+          appnet:
+              ipv4_address: 172.24.2.1
+
+  worker:
+    build: worker/.
+    ports:
+      - 6000:6000
+    networks:
+          appnet:
+              ipv4_address: 172.24.2.2
+
+
+networks:
+    appnet:
+        driver: bridge
+        ipam:
+            driver: default
+            config:
+                - subnet: "172.24.2.0/16"
